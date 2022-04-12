@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.2;
+  background-color: #f5f5dc;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 950px;
+  margin: 4rem auto;
+  padding: 0 0.55rem;
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.header h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.header h3 a {
+  color: rgb(74, 74, 255);
+}
+
+.todos-container {
+  margin: 2rem 0;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  background: rgb(233, 233, 232);
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  word-break: break-all;
+}
+
+.todo-title {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.remove-button {
+  font-size: 1.8rem;
+  background: rgb(241, 35, 35);
+  color: #f5f5dc;
+  border: none;
+  border-radius: 50%;
+  padding: 0 0.55rem;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  transition-duration: 0.3s;
+  background: rgb(209, 18, 18);
+}
+
+.form input {
+  width: 65%;
+  padding: 1rem;
+  margin-right: 1.5rem;
+  background: rgb(233, 233, 232);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  outline: none;
+  outline-color: none;
+  border: none;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.form button {
+  background: rgb(233, 233, 232);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .form input {
+    width: 100%;
+    margin-bottom: 1.2rem;
+  }
+
+  .form {
+    text-align: center;
+  }
+
+  .form button {
+    width: 250px;
+  }
+}
